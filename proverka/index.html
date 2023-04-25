@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин роллов</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			
+			<div class="site-title">Мацони</div>
+			<p class="lead">ГРУЗИНСКИЙ РЕСТОРАНЧИК</p>
+		</div>
+	</header>
+	
+	<div class="blok-menu">
+		<div class="blok-menu1">
+			<ul class="ryad">
+				<li class="ichi"><a href="#" class="knopka1">Салаты</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Холодный закуски</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Супы</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Горячие Блюда</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Горячие Закуски</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Хинкали</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Хачапури</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Соусы</a></li>
+				<li class="ichi"><a href="#" class="knopka1">Напитки</a></li>
+			</ul>
+	</div>
+	</div>
+	
+	<div class="container mb-5">
+		<div class="row">
+
+			<!-- Товары -->
+
+			<div class="col-md-8">
+				<div class="row" id="products-container">
+
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			
+			<div class="col-md-4">
+<form action="forma.php" method="post">
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+							
+                         
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost"></span><br>
+								<span class="small">Бесплатно при заказе от 900 ₽</span>
+							</p>
+							<p><span class="h5">Итого:</span>
+								<span class="total-price">0</span>
+								<span class="rouble">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						
+							<div class="form-group">
+								<input type="text" class="form-control" name="name" placeholder="Имя">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="phone" placeholder="Ваш номер">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				</form>- <!-- // Корзина -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+
+</body>
+</html>
